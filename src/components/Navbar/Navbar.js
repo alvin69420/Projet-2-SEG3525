@@ -1,31 +1,3 @@
-/* import React from 'react';
-import SearchBar from '../Searchbar/Searchbar';
-
-const Navbar = ({ activePage, setActivePage }) => {
-
-    const handleSetActiveLink = (link) => {
-        setActivePage(link);
-    };
-
-    return ( 
-        <nav className="navbar">
-            <h1>Fitness Fusion</h1>
-            <div className="links">
-                <a href="/" className={activePage === 'home' ? 'active' : ''} onClick={() => handleSetActiveLink('home')}>Home</a>
-                <a href="/" className={activePage === 'shop' ? 'active' : ''} onClick={() => handleSetActiveLink('shop')}>Shop</a>
-                <a href="/" className={activePage === 'exercises' ? 'active' : ''} onClick={() => handleSetActiveLink('exercises')}>Exercises</a>
-                <a href="/" className={activePage === 'learn' ? 'active' : ''} onClick={() => handleSetActiveLink('learn')}>Learn</a>
-                <a href="/" className={activePage === 'contact' ? 'active' : ''} onClick={() => handleSetActiveLink('contact')}>Contact Us</a>
-            </div>
-            <div className="search-bar-container">
-                <SearchBar />
-            </div>
-        </nav>
-     );
-}
- 
-export default Navbar; */
-
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import SearchBar from '../Searchbar/Searchbar';
@@ -88,11 +60,11 @@ const Navbar = ({ activePage, setActivePage }) => {
                         Learn
                     </Dropdown.Toggle>
                     <Dropdown.Menu className="dropdown-menu">
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Benches', e)}>Training</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Dumbbells', e)}>Muscle Building</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Kettlebells', e)}>Fat Loss</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Barbells', e)}>Nutrition</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Plates', e)}>Supplements</Dropdown.Item>
+                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Training', e)}>Training</Dropdown.Item>
+                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Muscle Building', e)}>Muscle Building</Dropdown.Item>
+                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Fat Loss', e)}>Fat Loss</Dropdown.Item>
+                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Nutrition', e)}>Nutrition</Dropdown.Item>
+                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Supplements', e)}>Supplements</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
 
