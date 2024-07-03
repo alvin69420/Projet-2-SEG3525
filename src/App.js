@@ -20,11 +20,11 @@ import Leg from './pages/Exercise Pages/Exercise Type Pages/leg';
 import Chest from './pages/Exercise Pages/Exercise Type Pages/chest';
 import Back from './pages/Exercise Pages/Exercise Type Pages/back';
 import Arm from './pages/Exercise Pages/Exercise Type Pages/arm';
-import FatLoss from './pages/Learn Pages/fatloss';
-import Nutrition from './pages/Learn Pages/nutrition';
-import Supplements from './pages/Learn Pages/supplements';
-import Training from './pages/Learn Pages/training';
-import MuscleBuilding from './pages/Learn Pages/musclebuilding';
+import FatLoss from './pages/Learn Pages/Article Type Pages/fatloss';
+import Nutrition from './pages/Learn Pages/Article Type Pages/nutrition';
+import Supplements from './pages/Learn Pages/Article Type Pages/supplements';
+import Training from './pages/Learn Pages/Article Type Pages/training';
+import MuscleBuilding from './pages/Learn Pages/Article Type Pages/musclebuilding';
 import './index.css';
 
 function App() {

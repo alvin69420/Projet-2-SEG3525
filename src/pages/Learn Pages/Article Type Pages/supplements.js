@@ -1,9 +1,9 @@
-import ExercisesAndArticles from "../../components/ExercisesAndArticles";
+import ExercisesAndArticles from "../../../components/ExercisesAndArticles";
 
-const Nutrition = () => {
+const Supplements = () => {
   return (
     <ExercisesAndArticles 
-    PageTitle="Nutrition Articles"
+    PageTitle="Supplements Articles"
     Name1={"First Article"} 
     Name2={"Second Article"}
     Name3={"Third Article"}
@@ -14,4 +14,4 @@ const Nutrition = () => {
   );
 }
 
-export default Nutrition;
+export default Supplements;

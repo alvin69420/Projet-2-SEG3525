@@ -1,9 +1,9 @@
-import ExercisesAndArticles from "../../components/ExercisesAndArticles";
+import ExercisesAndArticles from "../../../components/ExercisesAndArticles";
 
-const FatLoss = () => {
+const Nutrition = () => {
   return (
     <ExercisesAndArticles 
-    PageTitle="Fat Loss Articles"
+    PageTitle="Nutrition Articles"
     Name1={"First Article"} 
     Name2={"Second Article"}
     Name3={"Third Article"}
@@ -14,4 +14,4 @@ const FatLoss = () => {
   );
 }
 
-export default FatLoss;
+export default Nutrition;

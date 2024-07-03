@@ -1,9 +1,9 @@
-import ExercisesAndArticles from "../../components/ExercisesAndArticles";
+import ExercisesAndArticles from "../../../components/ExercisesAndArticles";
 
-const MuscleBuilding = () => {
+const Training = () => {
   return (
     <ExercisesAndArticles 
-    PageTitle="Muscle Building Articles"
+    PageTitle="Training Articles"
     Name1={"First Article"} 
     Name2={"Second Article"}
     Name3={"Third Article"}
@@ -11,8 +11,7 @@ const MuscleBuilding = () => {
     Description2={"This is a description of the second article"}
     Description3={"This is a description of the third article"}
     ExerciseOrArticle="Article"/>
-    
   );
 }
 
-export default MuscleBuilding;
+export default Training;

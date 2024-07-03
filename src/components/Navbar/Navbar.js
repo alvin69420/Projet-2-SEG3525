@@ -1,6 +1,7 @@
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import SearchBar from '../Searchbar/Searchbar';
+import Button from 'react-bootstrap/Button';
 import { DropdownDivider } from 'react-bootstrap';
 
 const Navbar = ({ activePage, setActivePage }) => {
@@ -14,8 +15,7 @@ const Navbar = ({ activePage, setActivePage }) => {
         <nav className="navbar">
             <h1>Fitness Fusion</h1>
             <div className="links">
-                <a href="#" className={`nav-link ${activePage === 'home' ? 'active' : ''}`} onClick={(e) => handleLinkClick('home', e)}>Home</a>
-
+                <Button href="#" className={`nav-link ${activePage === 'home' ? 'active' : ''}`} onClick={(e) => handleLinkClick('home', e)}>Home</Button>
                 <Dropdown>
                     <Dropdown.Toggle as="button" className={`nav-link ${activePage === 'shop' ? 'active' : ''}`} id="nav-dropdown">
                         Shop
@@ -68,7 +68,7 @@ const Navbar = ({ activePage, setActivePage }) => {
                     </Dropdown.Menu>
                 </Dropdown>
 
-                <a href="#" className={`nav-link ${activePage === 'contact' ? 'active' : ''}`} onClick={(e) => handleLinkClick('contact', e)}>Contact Us</a>
+                <Button href="#" className={`nav-link ${activePage === 'contact' ? 'active' : ''}`} onClick={(e) => handleLinkClick('contact', e)}>Contact Us</Button>
             </div>
             <div className="search-bar-container">
                 <SearchBar />
