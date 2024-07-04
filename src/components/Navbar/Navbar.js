@@ -75,6 +75,6 @@ const Navbar = ({ activePage, setActivePage }) => {
             </div>
         </nav>
      );
-}
- 
+} 
+
 export default Navbar;

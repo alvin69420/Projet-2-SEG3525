@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import ContactUs from './pages/ContactUs'; 
@@ -35,8 +35,10 @@ function App() {
   };
 
   return (
+
     <div className="App">
       <Navbar activePage={currentPage} setActivePage={handleSetActivePage} />
+
       <div className='content'>
         {currentPage === 'home' && <Home />}
         {currentPage === 'contact' && <ContactUs />}
@@ -63,7 +65,6 @@ function App() {
         {currentPage === 'Supplements' && <Supplements />}
         {currentPage === 'Training' && <Training />}
         {currentPage === 'Muscle Building' && <MuscleBuilding />}
-
       </div>
     </div>
   );

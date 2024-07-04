@@ -1,16 +1,16 @@
-import ExercisesAndArticles from '../../../components/ExercisesAndArticles';
+import ExercisesAndArticles from '../../../components/Exercises and Articles/ExercisesAndArticles';
 
 const Arm = () => {
   return (
     <ExercisesAndArticles 
-    PageTitle={"Arm Exercises"}
-    Name1={"First Exercise"} 
-    Name2={"Second Exercise"}
-    Name3={"Third Exercise"}
-    Description1={"This is a description of the first exercise"}
-    Description2={"This is a description of the second exercise"}
-    Description3={"This is a description of the third exercise"}
-    ExerciseOrArticle="Exercise"/>
+      PageTitle="Arm Exercises"
+      arr={[
+        {Name: "First Exercise", Description: "This is a description of the first exercise", Img: require("../../../images/placeholder-image.png")},
+        {Name: "Second Exercise", Description: "This is a description of the second exercise", Img: require("../../../images/placeholder-image.png")},
+        {Name: "Third Exercise", Description: "This is a description of the third exercise", Img: require("../../../images/placeholder-image.png")}
+      ]}
+      ExerciseOrArticle="Exercise"
+    />
   );
 }
 
