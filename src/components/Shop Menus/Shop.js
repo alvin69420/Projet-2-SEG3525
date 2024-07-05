@@ -27,6 +27,7 @@ const Shop = ({ defaultActiveItem, allProducts, categories }) => {
                 <ListGroup>
                     {categories.map((category, index) => (
                         <ListGroup.Item
+                            variant='light'
                             key={index}
                             action
                             href="#"

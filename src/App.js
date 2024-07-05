@@ -25,6 +25,8 @@ import Nutrition from './pages/Learn Pages/Article Type Pages/nutrition';
 import Supplements from './pages/Learn Pages/Article Type Pages/supplements';
 import Training from './pages/Learn Pages/Article Type Pages/training';
 import MuscleBuilding from './pages/Learn Pages/Article Type Pages/musclebuilding';
+import PlanTraining from './pages/PlanTraining';
+import Blog from './pages/Forum';
 import './index.css';
 
 function App() {
@@ -65,6 +67,8 @@ function App() {
         {currentPage === 'Supplements' && <Supplements />}
         {currentPage === 'Training' && <Training />}
         {currentPage === 'Muscle Building' && <MuscleBuilding />}
+        {currentPage === 'Plan Training' && <PlanTraining />}
+        {currentPage === 'Forum' && <Blog />}
       </div>
     </div>
   );

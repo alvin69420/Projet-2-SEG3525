@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import SeatedDumbbellPressGuide from '../../pages/Exercise Pages/Specific Exercise Pages/SeatedDumbbellPressGuide';
 import DumbbellLateralRaiseGuide from '../../pages/Exercise Pages/Specific Exercise Pages/DumbbellLateralRaiseGuide';
 import SeatedBarbellShoulderPressGuide from '../../pages/Exercise Pages/Specific Exercise Pages/SeatedBarbellShoulderPress';
+import BeginnerFitnessGuide from '../../pages/Learn Pages/Specific Article Pages/BeginnerFitnessGuide';
 
 const ExercisesAndArticles = ({ PageTitle, arr, ExerciseOrArticle }) => {
     const [activeItem, setActiveItem] = useState('');
@@ -15,6 +16,7 @@ const ExercisesAndArticles = ({ PageTitle, arr, ExerciseOrArticle }) => {
         'Seated Dumbbell Press': <SeatedDumbbellPressGuide />,
         'Dumbbell Lateral Raise': <DumbbellLateralRaiseGuide />,
         'Seated Barbell Shoulder Press': <SeatedBarbellShoulderPressGuide />,
+        'A Beginner\'s Guide to Starting Your Fitness Journey': <BeginnerFitnessGuide />,
     };
 
     const handleItemClick = (itemName) => {
