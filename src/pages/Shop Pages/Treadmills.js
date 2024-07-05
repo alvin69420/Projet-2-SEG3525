@@ -3,29 +3,29 @@ import Shop from '../../components/Shop Menus/Shop';
 const Treadmills = () => {
     const allProducts = {
         'Treadmills': [
-            { name: 'Treadmill', price: 100, image: 'replace' },
-            { name: 'Treadmill', price: 150, image: 'replace' },
-            { name: 'Treadmill', price: 120, image: 'replace' },
+            { name: 'Basic Treadmill', price: 800, image: require("../../images/Basic-Treadmill.jpg") },
+            { name: 'Commercial Treadmill', price: 1500, image: require("../../images/Commercial-Treadmill.webp") },
+            { name: 'Foldable Treadmill', price: 1200, image: require("../../images/Foldable-Treadmill.webp") },
         ],
         'Ellipticals': [
-            { name: 'Elliptical', price: 20, image: 'replace' },
-            { name: 'Elliptical', price: 30, image: 'replace' },
-            { name: 'Elliptical', price: 40, image: 'replace' },
+            { name: 'Standard Elliptical', price: 800, image: require("../../images/Standard-Elliptical.jpg") },
+            { name: 'Elliptical Trainer', price: 1200, image: require("../../images/Elliptical-Trainer.webp") },
+            { name: 'Cross Trainer', price: 1500, image: require("../../images/Cross-Trainer.webp") },
         ],
         'Bikes': [
-            { name: 'Bike', price: 25, image: 'replace' },
-            { name: 'Bike', price: 45, image: 'replace' },
-            { name: 'Bike', price: 60, image: 'replace' },
+            { name: 'Exercise Bike', price: 500, image: require("../../images/Exercise-Bike.jpg") },
+            { name: 'Stationary Bike', price: 800, image: require("../../images/Stationary-Bike.jpg") },
+            { name: 'Recumbent Bike', price: 1000, image: require("../../images/Recumbant-Bike.webp") },
         ],
         'Rowers': [
-            { name: 'Rower', price: 200, image: 'replace' },
-            { name: 'Rower', price: 100, image: 'replace' },
-            { name: 'Rower', price: 150, image: 'replace' },
+            { name: 'Rowing Machine', price: 1000, image: require("../../images/Rowing-Machine.webp") },
+            { name: 'Water Rower', price: 1200, image: require("../../images/Water-Rower.jpg") },
+            { name: 'Magnetic Rower', price: 1500, image: require("../../images/Magnetic-Rower.webp") },
         ],
         'Climbers': [
-            { name: 'Climber', price: 10, image: 'replace' },
-            { name: 'Climber', price: 25, image: 'replace' },
-            { name: 'Climber', price: 45, image: 'replace' },
+            { name: 'Vertical Climber', price: 300, image: require("../../images/Vertical-Climber.jpg") },
+            { name: 'Stair Climber', price: 600, image: require("../../images/Stair-Climber.webp") },
+            { name: 'Stepper Machine', price: 800, image: require("../../images/Stepper-Machine.jpeg") },
         ]
     };
 

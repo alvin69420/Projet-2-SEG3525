@@ -102,8 +102,8 @@ const ForumPage = () => {
                             required 
                         />
                     </Form.Group>
-                    <Button variant="primary" type="submit" className="mt-3">
-                        Post
+                    <Button variant="danger" type="submit" className="mt-3">
+                        <h5>Post</h5>
                     </Button>
                 </Form>
         </Container>

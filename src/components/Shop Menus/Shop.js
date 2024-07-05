@@ -47,7 +47,7 @@ const Shop = ({ defaultActiveItem, allProducts, categories }) => {
                         <Card.Body>
                             <Card.Title>{product.name}</Card.Title>
                             <Card.Text>
-                                Price ${product.price}
+                                Price: {product.price} $
                             </Card.Text>
                             <Button variant="danger"><b>Buy</b></Button>
                         </Card.Body>

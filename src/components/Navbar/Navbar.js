@@ -68,7 +68,7 @@ const Navbar = ({ activePage, setActivePage }) => {
                     </Dropdown.Menu>
                 </Dropdown>
 
-                <Button href="#" className={`nav-link ${activePage === 'plantraining' ? 'active' : ''}`} onClick={(e) => handleLinkClick('Plan Training', e)}>Plan Your Training</Button>
+                <Button href="#" className={`nav-link ${activePage === 'Plan Training' ? 'active' : ''}`} onClick={(e) => handleLinkClick('Plan Training', e)}>Plan Your Training</Button>
                 <Button href="#" className={`nav-link ${activePage === 'Forum' ? 'active' : ''}`} onClick={(e) => handleLinkClick('Forum', e)}>Forum</Button>
                 <Button href="#" className={`nav-link ${activePage === 'contact' ? 'active' : ''}`} onClick={(e) => handleLinkClick('contact', e)}>Contact Us</Button>
                 

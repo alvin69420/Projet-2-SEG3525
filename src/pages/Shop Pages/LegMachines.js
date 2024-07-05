@@ -3,21 +3,22 @@ import Shop from '../../components/Shop Menus/Shop';
 const LegMachines = () => {
     const allProducts = {
         
-        'Cable Machines': [
-            { name: 'Cable Machine', price: 100, image: 'replace' },
-            { name: 'Cable Machine', price: 150, image: 'replace' },
-            { name: 'Cable Machine', price: 120, image: 'replace' },
-        ],
-        'Smith Machines': [
-            { name: 'Smith Machine', price: 25, image: 'replace' },
-            { name: 'Smith Machine', price: 45, image: 'replace' },
-            { name: 'Smith Machine', price: 60, image: 'replace' },
-        ],
-        'Leg Machines': [
-            { name: 'Leg Machine', price: 20, image: 'replace' },
-            { name: 'Leg Machine', price: 30, image: 'replace' },
-            { name: 'Leg Machine', price: 40, image: 'replace' },
-        ],
+'Cable Machines': [
+    { name: 'Cable Crossover Machine', price: 1500, image: require("../../images/Cable-Crossover.jpg") },
+    { name: 'Functional Trainer', price: 2000, image: require("../../images/Functional-Trainer.webp") },
+    { name: 'Cable Tower', price: 1800, image: require("../../images/Cable-Tower.webp") },
+],
+'Smith Machines': [
+    { name: 'Basic Smith Machine', price: 900, image: require("../../images/Basic-Smith.webp") },
+    { name: 'Commercial Smith Machine', price: 1600, image: require("../../images/Commercial-Smith.webp") },
+    { name: 'Adjustable Smith Machine', price: 1200, image: require("../../images/Adjustable-Smith.webp") },
+],
+'Leg Machines': [
+    { name: 'Leg Press Machine', price: 1200, image: require("../../images/Leg-Press.jpg") },
+    { name: 'Leg Extension Machine', price: 1000, image: require("../../images/Leg-Extension.webp") },
+    { name: 'Seated Leg Curl Machine', price: 1100, image: require("../../images/Leg-Curl.jpg") },
+],
+
 
     };
 
