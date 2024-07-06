@@ -5,9 +5,9 @@ const Back = () => {
     <ExercisesAndArticles 
       PageTitle="Back Exercises"
       arr={[
-        {Name: "First Exercise", Description: "This is a description of the first exercise", Img: require("../../../images/placeholder-image.png")},
-        {Name: "Second Exercise", Description: "This is a description of the second exercise", Img: require("../../../images/placeholder-image.png")},
-        {Name: "Third Exercise", Description: "This is a description of the third exercise", Img: require("../../../images/placeholder-image.png")}
+        {Name: "Deadlift", Description: "A compound exercise involving lifting a barbell from the ground to hip level, targeting the lower back, glutes, and hamstrings", Img: require("../../../images/Deadlift.jpg")},
+        {Name: "Pull-Up", Description: "A bodyweight exercise involving pulling the body up to a bar by bending the arms, targeting the upper back and biceps", Img: require("../../../images/Pull-up.webp")},
+        {Name: "Bent Over Row", Description: "An exercise involving bending at the waist and pulling a barbell or dumbbells towards the torso, targeting the upper and middle back", Img: require("../../../images/Bent-over-row.jpg")}
       ]}
       ExerciseOrArticle="Exercise"
     />

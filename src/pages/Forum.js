@@ -8,19 +8,19 @@ const ForumPage = () => {
         {
             title: "My First Week of Training",
             author: "John Doe",
-            date: "July 1, 2024",
+            date: "7/1/2024",
             content: "I started my fitness journey this week and it's been amazing. I've been consistent with my workouts and I'm already feeling stronger."
         },
         {
             title: "Hitting a New Personal Record",
             author: "Jane Smith",
-            date: "July 2, 2024",
+            date: "7/2/2024",
             content: "Today I hit a new personal record on my bench press! It felt incredible to see my progress paying off."
         },
         {
             title: "Staying Motivated During Tough Times",
             author: "Michael Johnson",
-            date: "July 3, 2024",
+            date: "7/3/2024",
             content: "There were days when I didn't feel like working out, but I pushed through and I'm proud of my commitment."
         }
     ]);

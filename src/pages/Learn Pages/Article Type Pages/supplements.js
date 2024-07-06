@@ -5,9 +5,9 @@ const Supplements = () => {
     <ExercisesAndArticles 
       PageTitle="Supplements Articles"
       arr={[
-        {Name: "First Article", Description: "This is a description of the first article", Img: require("../../../images/placeholder-image.png")},
-        {Name: "Second Article", Description: "This is a description of the second article", Img: require("../../../images/placeholder-image.png")},
-        {Name: "Third Article", Description: "This is a description of the third article", Img: require("../../../images/placeholder-image.png")}
+        {Name: "A Beginner's Guide to Supplements", Description: "Get an introduction to dietary supplements, including what they are, how they work, and which ones might benefit your fitness goals.", Img: require("../../../images/placeholder-image.png")},
+        {Name: "Top Supplements for Muscle Growth", Description: "Discover the top supplements that can help you build muscle more effectively and support your training regimen.", Img: require("../../../images/placeholder-image.png")},
+        {Name: "Are Supplements Necessary for Fat Loss?", Description: "Learn about the role of supplements in fat loss and whether they are necessary to achieve your weight loss goals.", Img: require("../../../images/placeholder-image.png")}
       ]}
       ExerciseOrArticle="Article"
     />

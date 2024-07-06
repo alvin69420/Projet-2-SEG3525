@@ -5,9 +5,9 @@ const Arm = () => {
     <ExercisesAndArticles 
       PageTitle="Arm Exercises"
       arr={[
-        {Name: "First Exercise", Description: "This is a description of the first exercise", Img: require("../../../images/placeholder-image.png")},
-        {Name: "Second Exercise", Description: "This is a description of the second exercise", Img: require("../../../images/placeholder-image.png")},
-        {Name: "Third Exercise", Description: "This is a description of the third exercise", Img: require("../../../images/placeholder-image.png")}
+        {Name: "Bicep Curl", Description: "An exercise involving lifting a dumbbell by curling the arm towards the shoulder, targeting the bicep muscles", Img: require("../../../images/Bicep-Curls.jpg")},
+        {Name: "Tricep Extension", Description: "An exercise involving extending the arm behind the head with a dumbbell, targeting the tricep muscles", Img: require("../../../images/Tricep-Extension.jpg")},
+        {Name: "Hammer Curl", Description: "An exercise similar to the bicep curl but with a neutral grip, targeting the brachialis muscle", Img: require("../../../images/Hammer-Curl.webp")}
       ]}
       ExerciseOrArticle="Exercise"
     />
