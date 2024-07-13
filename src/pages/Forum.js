@@ -71,7 +71,7 @@ const ForumPage = () => {
             </div>
             <Form onSubmit={handleSubmit}>
                     <h3 className="mt-5">Create a New Post</h3>
-                    <Form.Group controlId="formTitle" className='mt-3'>
+                    <Form.Group controlId="formTitle" className='mt-3 w-50'>
                         <Form.Label>Title</Form.Label>
                         <Form.Control 
                             type="text" 
@@ -81,7 +81,7 @@ const ForumPage = () => {
                             required 
                         />
                     </Form.Group>
-                    <Form.Group controlId="formAuthor" className="mt-3">
+                    <Form.Group controlId="formAuthor" className="mt-3 w-50">
                         <Form.Label>Author</Form.Label>
                         <Form.Control 
                             type="text" 
@@ -95,7 +95,7 @@ const ForumPage = () => {
                         <Form.Label>Content</Form.Label>
                         <Form.Control 
                             as="textarea" 
-                            rows={3} 
+                            rows={5} 
                             placeholder="Enter your post content" 
                             value={content}
                             onChange={(e) => setContent(e.target.value)}

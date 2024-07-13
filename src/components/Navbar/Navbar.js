@@ -1,23 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import SearchBar from '../Searchbar/Searchbar';
 import Button from 'react-bootstrap/Button';
 import { DropdownDivider } from 'react-bootstrap';
 
 const Navbar = ({ activePage, setActivePage }) => {
+    
+    const [activeDropdown, setActiveDropdown] = useState('');
 
     const handleLinkClick = (link, event) => {
         event.preventDefault();
         setActivePage(link);
+        switch (link) {
+            case 'Benches':
+            case 'Dumbbells':
+            case 'Kettlebells':
+            case 'Barbells':
+            case 'Plates':
+            case 'Cable Machines':
+            case 'Smith Machines':
+            case 'Leg Machines':
+            case 'Treadmills':
+            case 'Ellipticals':
+            case 'Bikes':
+            case 'Rowers':
+                setActiveDropdown('Shop');
+                break;
+            case 'Chest Exercises':
+            case 'Back Exercises':
+            case 'Arm Exercises':
+            case 'Shoulder Exercises':
+            case 'Leg Exercises':
+                setActiveDropdown('Exercises');
+                break;
+            case 'Training':
+            case 'Muscle Building':
+            case 'Fat Loss':
+            case 'Nutrition':
+            case 'Supplements':
+                setActiveDropdown('Learn');
+                break;
+            default:
+                setActiveDropdown('');
+                break;
+        }
     };
 
-    return ( 
+    const handleActiveMenu = (menu) => {
+        return activeDropdown === menu ? 'active' : '';
+    };
+
+    return (
         <nav className="navbar">
             <h1>Fitness Fusion</h1>
             <div className="links">
-                <Button href="#" className={`nav-link ${activePage === 'home' ? 'active' : ''}`} onClick={(e) => handleLinkClick('home', e)}>Home</Button>
+                <Button href="#" className={`nav-link ${activePage === 'Home' ? 'active' : ''}`} onClick={(e) => handleLinkClick('Home', e)}>Home</Button>
                 <Dropdown>
-                    <Dropdown.Toggle as="button" className={`nav-link ${activePage === 'shop' ? 'active' : ''}`} id="nav-dropdown">
+                    <Dropdown.Toggle as="button" className={`nav-link ${handleActiveMenu('Shop')}`} id="nav-dropdown">
                         Shop
                     </Dropdown.Toggle>
                     <Dropdown.Menu className="dropdown-menu">
@@ -43,7 +82,7 @@ const Navbar = ({ activePage, setActivePage }) => {
                 </Dropdown>
 
                 <Dropdown>
-                    <Dropdown.Toggle as="button" className={`nav-link ${activePage === 'Exercises' ? 'active' : ''}`} id="nav-dropdown">
+                    <Dropdown.Toggle as="button" className={`nav-link ${handleActiveMenu('Exercises')}`} id="nav-dropdown">
                         Exercises
                     </Dropdown.Toggle>
                     <Dropdown.Menu className="dropdown-menu">
@@ -56,7 +95,7 @@ const Navbar = ({ activePage, setActivePage }) => {
                 </Dropdown>
 
                 <Dropdown>
-                    <Dropdown.Toggle as="button" className={`nav-link ${activePage === 'Learn' ? 'active' : ''}`} id="nav-dropdown">
+                    <Dropdown.Toggle as="button" className={`nav-link ${handleActiveMenu('Learn')}`} id="nav-dropdown">
                         Learn
                     </Dropdown.Toggle>
                     <Dropdown.Menu className="dropdown-menu">
@@ -68,16 +107,15 @@ const Navbar = ({ activePage, setActivePage }) => {
                     </Dropdown.Menu>
                 </Dropdown>
 
-                <Button href="#" className={`nav-link ${activePage === 'Plan Training' ? 'active' : ''}`} onClick={(e) => handleLinkClick('Plan Training', e)}>Plan Your Training</Button>
+                <Button href="#" className={`nav-link ${activePage === 'Plan Your Training' ? 'active' : ''}`} onClick={(e) => handleLinkClick('Plan Your Training', e)}>Plan Your Training</Button>
                 <Button href="#" className={`nav-link ${activePage === 'Forum' ? 'active' : ''}`} onClick={(e) => handleLinkClick('Forum', e)}>Forum</Button>
-                <Button href="#" className={`nav-link ${activePage === 'contact' ? 'active' : ''}`} onClick={(e) => handleLinkClick('contact', e)}>Contact Us</Button>
-                
+                <Button href="#" className={`nav-link ${activePage === 'Contact Us' ? 'active' : ''}`} onClick={(e) => handleLinkClick('Contact Us', e)}>Contact Us</Button>
             </div>
             <div className="search-bar-container">
-                <SearchBar />
+                <SearchBar handleSearchClick={handleLinkClick} />
             </div>
         </nav>
-     );
-} 
+    );
+};
 
 export default Navbar;

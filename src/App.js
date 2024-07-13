@@ -30,7 +30,7 @@ import Blog from './pages/Forum';
 import './index.css';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState('Home');
 
   const handleSetActivePage = (page) => {
     setCurrentPage(page);
@@ -42,8 +42,8 @@ function App() {
       <Navbar activePage={currentPage} setActivePage={handleSetActivePage} />
 
       <div className='content'>
-        {currentPage === 'home' && <Home />}
-        {currentPage === 'contact' && <ContactUs />}
+        {currentPage === 'Home' && <Home />}
+        {currentPage === 'Contact Us' && <ContactUs />}
         {currentPage === 'Benches' && <Benches />}
         {currentPage === 'Dumbbells' && <Dumbbells />}
         {currentPage === 'Kettlebells' && <Kettlebells />}
@@ -67,7 +67,7 @@ function App() {
         {currentPage === 'Supplements' && <Supplements />}
         {currentPage === 'Training' && <Training />}
         {currentPage === 'Muscle Building' && <MuscleBuilding />}
-        {currentPage === 'Plan Training' && <PlanTraining />}
+        {currentPage === 'Plan Your Training' && <PlanTraining />}
         {currentPage === 'Forum' && <Blog />}
       </div>
     </div>

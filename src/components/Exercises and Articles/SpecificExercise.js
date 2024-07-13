@@ -8,9 +8,9 @@ const SpecificExercise = ({ title, description, instructions, videoUrl }) => {
                 <Col>
                     <h2 className="text-center mt-3 display-3"><b>{title}</b></h2>
                     <h1 className='mt-4'>Overview</h1>
-                    <p className="mt-3" id='exerciseText'>{description}</p>
+                    <p className="mt-3" id='exerciseOrArticleText'>{description}</p>
                     <h1 className='mt-3'>Instructions</h1>
-                    <ol className='mt-3' id='exerciseText'>
+                    <ol className='mt-3' id='exerciseOrArticleText'>
                         {instructions.map((instruction, index) => (
                             <li key={index}>{instruction}</li>
                         ))}

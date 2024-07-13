@@ -17,7 +17,7 @@ const SpecificArticle = ({ title, content, imageUrl, author, date }) => {
                         <img src={imageUrl} alt={title} className="img-fluid" />
                     </div>
                     <div className="mt-5">
-                        <p id='articleText'>{content}</p>
+                        <p id='exerciseOrArticleText'>{content}</p>
                     </div>
                 </Col>
             </Row>
