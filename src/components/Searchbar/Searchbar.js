@@ -86,7 +86,7 @@ const SearchBar = ({handleSearchClick}) => {
         );
         if (matchedCategory) {
             var e = { preventDefault: () => {} };
-            e = handleSearchClick(searchInput, e);
+            handleSearchClick(searchInput, e);
             setSearchInput('');
         } else {
             alert('This page does not exist');
