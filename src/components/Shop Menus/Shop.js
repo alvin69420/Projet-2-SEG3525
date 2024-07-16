@@ -42,14 +42,14 @@ const Shop = ({ defaultActiveItem, allProducts, categories }) => {
               
               {products.map((product, index) => (
                   <Col key={index}>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={product.image} alt='Product Image'/>
+                    <Card style={{ width: 'auto' }}>
+                        <Card.Img style={{maxWidth:'100%', height: '250px'}} className='mt-3' variant="top" src={product.image} alt='Product Image'/>
                         <Card.Body>
                             <Card.Title>{product.name}</Card.Title>
                             <Card.Text>
                                 Price: {product.price} $
                             </Card.Text>
-                            <Button variant="danger"><b>Buy</b></Button>
+                            <Button variant="danger"><b>Add to cart</b></Button>
                         </Card.Body>
                     </Card>
                   </Col>

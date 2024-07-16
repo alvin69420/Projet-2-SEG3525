@@ -21,6 +21,9 @@ import LegPressGuide from '../../pages/Exercise Pages/Specific Exercise Pages/Le
 import HammerCurlGuide from '../../pages/Exercise Pages/Specific Exercise Pages/HammerCurlGuide';
 import TricepExtensionGuide from '../../pages/Exercise Pages/Specific Exercise Pages/TricepExtensionGuide';
 import BicepCurlGuide from '../../pages/Exercise Pages/Specific Exercise Pages/BicepCurlGuide';
+
+// Article Guides Imports
+import BeginnerFitnessGuide from '../../pages/Learn Pages/Specific Article Pages/BeginnerFitnessGuide';
 import MuscleBuildingStrategies from '../../pages/Learn Pages/Specific Article Pages/MuscleBuildingStrategies';
 import CardioAndFatLoss from '../../pages/Learn Pages/Specific Article Pages/CardioAndFatLoss';
 import MacronutrientsImportance from '../../pages/Learn Pages/Specific Article Pages/MacronutrientsImportance';
@@ -35,9 +38,6 @@ import EssentialNutritionTips from '../../pages/Learn Pages/Specific Article Pag
 import MealPrepForSuccess from '../../pages/Learn Pages/Specific Article Pages/MealPrepForSuccess';
 import BeginnersGuideToSupplements from '../../pages/Learn Pages/Specific Article Pages/BeginnersGuideToSupplements';
 import SupplementsForFatLoss from '../../pages/Learn Pages/Specific Article Pages/SupplementsForFatLoss';
-
-// Article Guides Imports
-import BeginnerFitnessGuide from '../../pages/Learn Pages/Specific Article Pages/BeginnerFitnessGuide';
 
 const ExercisesAndArticles = ({ PageTitle, arr, ExerciseOrArticle }) => {
     const [activeItem, setActiveItem] = useState('');
@@ -60,7 +60,6 @@ const ExercisesAndArticles = ({ PageTitle, arr, ExerciseOrArticle }) => {
         'Tricep Extension': <TricepExtensionGuide />,
         'Bicep Curl': <BicepCurlGuide />,
         
-
         // Article Guides
         'A Beginner\'s Guide to Starting Your Fitness Journey': <BeginnerFitnessGuide />,
         'Effective Strategies for Building Muscle Mass': <MuscleBuildingStrategies />,
@@ -77,9 +76,6 @@ const ExercisesAndArticles = ({ PageTitle, arr, ExerciseOrArticle }) => {
         'How to Meal Prep for Success': <MealPrepForSuccess />,
         'A Beginner\'s Guide to Supplements': <BeginnersGuideToSupplements />,
         'Are Supplements Necessary for Fat Loss?': <SupplementsForFatLoss />,
-
-
-
     };
 
     const handleItemClick = (itemName) => {
@@ -93,8 +89,8 @@ const ExercisesAndArticles = ({ PageTitle, arr, ExerciseOrArticle }) => {
                 <Row className='mt-5'>
                     {arr.map((item, index) => (
                         <Col key={index}>
-                            <Card style={{ width: '24rem' }}>
-                                <Card.Img variant="top" src={item.Img} alt='Image of exercise or article' />
+                            <Card className='mt-3' style={{ width: 'auto', height:'auto' }}>
+                                <Card.Img style={{ maxWidth: '100%', height:'auto' }} variant="top" src={item.Img} alt='Image of exercise or article' />
                                 <Card.Body>
                                     <Card.Title className='text-center mt-3'><h3>{item.Name}</h3></Card.Title>
                                     <Card.Text className='mt-3'>
@@ -110,7 +106,8 @@ const ExercisesAndArticles = ({ PageTitle, arr, ExerciseOrArticle }) => {
                 </Row>
             </Container>
         ) : (
-            <div className='content'>
+            <div className='container content'>
+                <Button className='mt-4' variant = 'danger' onClick = {() => handleItemClick(!activeItem)}><h5>← Return to {PageTitle}</h5></Button>
                 {SpecificExercisesAndArticles[activeItem]}
             </div>
         )

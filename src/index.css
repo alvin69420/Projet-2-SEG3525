@@ -35,7 +35,7 @@ html, body {
 }
 
 .navbar a, a:visited, #nav-dropdown {
-    margin-left: 30px;
+    margin-left: 20px;
     text-decoration: none;
     padding: 10px;
     font-size: 24px;
@@ -81,7 +81,7 @@ html, body {
     position: relative;
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .search-bar-container input[type="search"] {
@@ -94,7 +94,8 @@ html, body {
 }
 
 #search-icon {
-    width: 30px;
+    width: 16px;
+    height: 16px;
 }
 
 #search-icon:hover {
@@ -128,6 +129,10 @@ html, body {
 
 .search-options li:hover {
     background-color: #f0f0f0;
+}
+
+.search-bar-container .cart {
+    font-size: 18px;
 }
 
 .dropdown-menu {
