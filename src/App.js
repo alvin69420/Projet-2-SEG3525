@@ -33,6 +33,7 @@ import './index.css';
 function App() {
   const [currentPage, setCurrentPage] = useState('Home');
   const [shopItemCount, setShopItemCount] = useState(0);
+  const [language, setLanguage] = useState('en');
 
   const handleSetActivePage = (page) => {
     setCurrentPage(page);
@@ -44,7 +45,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar activePage={currentPage} setActivePage={handleSetActivePage} itemCount={shopItemCount} />
+      <Navbar activePage={currentPage} setActivePage={handleSetActivePage} itemCount={shopItemCount} language={language} setLanguage={setLanguage} />
 
       <div className='content'>
         {currentPage === 'Home' && <Home />}
@@ -74,7 +75,7 @@ function App() {
         {currentPage === 'Muscle Building' && <MuscleBuilding />}
         {currentPage === 'Plan Your Training' && <PlanTraining />}
         {currentPage === 'Forum' && <Blog />}
-        {currentPage === 'FAQ' && <FAQ />}
+        {currentPage === 'FAQ' && <FAQ language={language}/>}
       </div>
     </div>
   );

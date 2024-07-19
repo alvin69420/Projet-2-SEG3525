@@ -4,7 +4,7 @@ import SearchBar from '../Searchbar/Searchbar';
 import Button from 'react-bootstrap/Button';
 import { DropdownDivider } from 'react-bootstrap';
 
-const Navbar = ({ activePage, setActivePage, itemCount }) => {
+const Navbar = ({ activePage, setActivePage, itemCount, language, setLanguage }) => {
     
     const [activeDropdown, setActiveDropdown] = useState('');
 
@@ -49,6 +49,10 @@ const Navbar = ({ activePage, setActivePage, itemCount }) => {
     const handleActiveMenu = (menu) => {
         return activeDropdown === menu ? 'active' : '';
     };
+
+    const toggleLanguage = () => {
+        setLanguage(language === 'en' ? 'es' : 'en');
+    }
     
 
     return (
@@ -157,6 +161,13 @@ const Navbar = ({ activePage, setActivePage, itemCount }) => {
                 </svg>
                     &nbsp;{`Cart ${itemCount > 0 ? ': ' + itemCount + ' ' + (itemCount === 1 ? 'item' : 'items') : ''}`} 
                 </div>
+                <p 
+                className='mt-3 mx-3' 
+                onClick={toggleLanguage}
+                style={{cursor: 'pointer'}}
+                >
+                {`${language === 'en' ? 'EN' : 'ES'}`}
+                </p>
             </div>
         </nav>
     );
