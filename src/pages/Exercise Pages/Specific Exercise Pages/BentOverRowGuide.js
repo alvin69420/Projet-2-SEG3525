@@ -11,7 +11,7 @@ const BentOverRowGuide = () => {
         'Pause briefly at the top of the movement, then lower the barbell back to the starting position with control.',
         'Repeat for the desired number of repetitions.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-bent-over-row-video-url';
+    const videoUrl = 'https://www.youtube.com/embed/FWJR5Ve8bnQ?si=8jEXkVekPyn1a4dd';
 
     return (
         <SpecificExercise

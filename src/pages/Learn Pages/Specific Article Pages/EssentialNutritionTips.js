@@ -47,7 +47,7 @@ const EssentialNutritionTips = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/NutritionTipsImage.png'),
         author: 'Rachel Green',
         date: 'June 12, 2022'
     };

@@ -11,7 +11,7 @@ const LungeGuide = () => {
         'Push through your front heel to return to the starting position. Exhale as you lift.',
         'Repeat for the desired number of repetitions, then switch legs.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-lunge-video-url';
+    const videoUrl = 'https://www.youtube.com/embed/D7KaRcUTQeE?si=ZwzRlee-l5jvaKjD';
 
     return (
         <SpecificExercise

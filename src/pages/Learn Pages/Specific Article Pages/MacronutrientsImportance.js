@@ -35,7 +35,7 @@ const MacronutrientsImportance = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/MacronutrientsImage.jpg'),
         author: 'Emily Johnson',
         date: 'October 5, 2021'
     };

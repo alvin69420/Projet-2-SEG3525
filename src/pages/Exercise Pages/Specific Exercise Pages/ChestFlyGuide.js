@@ -10,7 +10,7 @@ const ChestFlyGuide = () => {
         'Maintain the slight bend in your elbows as you raise the dumbbells back to the starting position by squeezing your chest muscles. Exhale as you lift the weights.',
         'Pause briefly at the top of the movement, then repeat for the desired number of repetitions.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-chest-fly-video-url';
+    const videoUrl = 'https://www.youtube.com/embed/HBzfHrehHj4?si=7_EgIrPafzb_kvfq';
 
     return (
         <SpecificExercise

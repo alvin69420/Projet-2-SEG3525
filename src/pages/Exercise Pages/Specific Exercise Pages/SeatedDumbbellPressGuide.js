@@ -10,7 +10,7 @@ const SeatedDumbbellPressGuide = () => {
         'Inhale and brace your core. Press the dumbbells upward until your arms are fully extended above your head. Ensure you do not lock your elbows at the top. Exhale as you press the weights up. Pause for a moment at the top of the movement.',
         'Slowly lower the dumbbells back to the starting position at shoulder height, controlling the movement. This allows for maximum muscle engagement and reduces the risk of injury. Inhale as you lower the weights.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-video-url'; 
+    const videoUrl = 'https://www.youtube.com/embed/qEwKCR5JCog?si=tBC5An6Q7dFUOQRc'; 
 
     return (
         <SpecificExercise

@@ -11,7 +11,7 @@ const SquatGuide = () => {
         'Push through your heels to stand back up, extending your hips and knees. Exhale as you lift.',
         'Repeat for the desired number of repetitions.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-squat-video-url';
+    const videoUrl = 'https://www.youtube.com/embed/aOzrA4FgnM0?si=7A5HCx1bqoBarqlM';
 
     return (
         <SpecificExercise

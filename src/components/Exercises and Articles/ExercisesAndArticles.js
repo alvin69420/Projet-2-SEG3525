@@ -89,14 +89,14 @@ const ExercisesAndArticles = ({ PageTitle, arr, ExerciseOrArticle }) => {
                 <Row className='mt-5'>
                     {arr.map((item, index) => (
                         <Col key={index}>
-                            <Card className='mt-3' style={{ width: 'auto', height:'auto' }}>
-                                <Card.Img style={{ maxWidth: '100%', height:'auto' }} variant="top" src={item.Img} alt='Image of exercise or article' />
+                            <Card className='mt-3' style={{ width: 'auto', height:'550px'}}>
+                                <Card.Img style={{ maxWidth: '100%', height:'250px' }} variant="top" src={item.Img} alt='Image of exercise or article' />
                                 <Card.Body>
                                     <Card.Title className='text-center mt-3'><h3>{item.Name}</h3></Card.Title>
                                     <Card.Text className='mt-3'>
                                         {item.Description}
                                     </Card.Text>
-                                    <Button variant="danger" onClick={() => handleItemClick(item.Name)}>
+                                    <Button variant="danger" onClick={() => handleItemClick(item.Name)} style={{position: 'absolute', bottom: 25}}>
                                         <h5> {ExerciseOrArticle === 'Exercise' ? 'View Exercise' : 'View Article'}</h5>
                                     </Button>
                                 </Card.Body>

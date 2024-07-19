@@ -11,7 +11,7 @@ const LegPressGuide = () => {
         'Slowly lower the platform back to the starting position by bending your knees and hips. Inhale as you lower.',
         'Repeat for the desired number of repetitions.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-leg-press-video-url';
+    const videoUrl = 'https://www.youtube.com/embed/IZxyjW7MPJQ?si=Ky5TYSJ3eVI74iQH';
 
     return (
         <SpecificExercise

@@ -31,7 +31,7 @@ const CardioAndFatLoss = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/CardioFatLossImage.jpg'),
         author: 'John Doe',
         date: 'September 10, 2021'
     };

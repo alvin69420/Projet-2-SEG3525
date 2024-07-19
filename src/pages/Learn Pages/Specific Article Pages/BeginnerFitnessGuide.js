@@ -47,7 +47,7 @@ const BeginnerFitnessGuide = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/BeginnerFitnessGuideImage.jpg'),
         author: 'John Doe',
         date: 'August 1, 2021'
     };

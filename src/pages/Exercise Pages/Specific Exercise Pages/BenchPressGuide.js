@@ -12,7 +12,7 @@ const BenchPressGuide = () => {
         'Pause briefly when the barbell is close to your chest, then press the barbell back up to the starting position by extending your arms. Exhale as you push the weight up.',
         'Repeat for the desired number of repetitions.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-bench-press-video-url'; 
+    const videoUrl = 'https://www.youtube.com/embed/SCVCLChPQFY?si=dz7WGRHqAIB6guOG'; 
 
     return (
         <SpecificExercise

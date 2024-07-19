@@ -47,7 +47,7 @@ const BeginnersGuideToSupplements = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/SupplementsImage.jpg'),
         author: 'Alex White',
         date: 'August 1, 2022'
     };

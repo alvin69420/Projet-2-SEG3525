@@ -39,7 +39,7 @@ const SupplementsForFatLoss = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/FatLossSupplementsImage.webp'),
         author: 'Samantha Lee',
         date: 'September 15, 2022'
     };

@@ -43,7 +43,7 @@ const DebunkingFatLossMyths = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/FatLossMythsImage.webp'),
         author: 'Michael Smith',
         date: 'May 5, 2022'
     };

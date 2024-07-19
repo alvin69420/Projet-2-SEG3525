@@ -1,5 +1,4 @@
-// pages/ForumPage.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Container, Form, Button, Alert } from 'react-bootstrap';
 import ForumPost from '../components/ForumPost';
 
@@ -45,7 +44,7 @@ const ForumPage = () => {
             setTitle('');
             setAuthor('');
             setContent('');
-            setTimeout(() => setShowAlert(false), 3000); // Hide alert after 3 seconds
+            setTimeout(() => setShowAlert(false), 3000);
         }
     };
 
@@ -54,11 +53,6 @@ const ForumPage = () => {
             <h1 className="display-4 text-center mt-5"><b>Forum</b></h1>
             <p className="text-center display-6">Share your fitness journey, progress, and tips with the community!</p>
             <div className="mt-5">
-                {showAlert && (
-                    <Alert variant="success" className="mt-3">
-                        Your post has been sent!
-                    </Alert>
-                )}
                 {posts.map((post, index) => (
                     <ForumPost
                         key={index}
@@ -69,6 +63,11 @@ const ForumPage = () => {
                     />
                 ))}
             </div>
+            {showAlert && (
+                    <Alert variant="success" className="mt-3">
+                        Your post has been sent!
+                    </Alert>
+            )}
             <Form onSubmit={handleSubmit}>
                     <h3 className="mt-5">Create a New Post</h3>
                     <Form.Group controlId="formTitle" className='mt-3 w-50'>

@@ -31,7 +31,7 @@ const MuscleGrowthSupplements = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/MuscleBuildingSupplementsImage.webp'),
         author: 'Michael Brown',
         date: 'November 12, 2021'
     };

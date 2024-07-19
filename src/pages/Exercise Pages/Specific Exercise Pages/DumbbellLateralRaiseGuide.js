@@ -11,7 +11,7 @@ const SeatedDumbbellPressGuide = () => {
         'Pause for a moment at the top of the movement, then slowly lower the dumbbells back to the starting position.',
         'Repeat for the desired number of repetitions.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-video-url'; 
+    const videoUrl = 'https://www.youtube.com/embed/g_7iXXBrCkY?si=Or7264rjCtHj1U_3'; 
 
     return (
         <SpecificExercise

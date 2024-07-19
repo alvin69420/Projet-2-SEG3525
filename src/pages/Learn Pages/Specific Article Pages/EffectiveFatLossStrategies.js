@@ -47,7 +47,7 @@ const EffectiveFatLossStrategies = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/FatLossStrategiesImage.webp'),
         author: 'Emily Brown',
         date: 'April 10, 2022'
     };

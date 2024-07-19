@@ -31,7 +31,7 @@ const MuscleBuildingStrategies = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/MuscleBuildingStrategiesImage.jpg'),
         author: 'Jane Smith',
         date: 'July 15, 2021'
     };

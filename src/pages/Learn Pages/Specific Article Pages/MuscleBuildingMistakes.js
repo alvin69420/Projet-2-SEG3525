@@ -43,7 +43,7 @@ const MuscleBuildingMistakes = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/MistakesMuscleBuildingImage.webp'),
         author: 'David Lee',
         date: 'March 15, 2022'
     };

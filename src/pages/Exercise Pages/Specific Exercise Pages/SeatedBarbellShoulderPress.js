@@ -10,7 +10,7 @@ const SeatedBarbellShoulderPressGuide = () => {
         'Inhale and brace your core. Press the barbell upward until your arms are fully extended above your head. Avoid locking your elbows at the top of the movement. Exhale as you press the weight up. Pause briefly at the top.',
         'Lower the barbell slowly back to the starting position at shoulder height, controlling the descent. This ensures maximum muscle engagement and reduces the risk of injury. Inhale as you lower the barbell.',
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-video-url';
+    const videoUrl = 'https://www.youtube.com/embed/ECWxumBMLVQ?si=hB3wz6wiP8r-oBs9';
 
     return (
         <SpecificExercise

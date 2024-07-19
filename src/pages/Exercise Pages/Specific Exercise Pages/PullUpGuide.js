@@ -11,7 +11,7 @@ const PullUpGuide = () => {
         'Lower yourself back to the starting position with control, fully extending your arms.',
         'Repeat for the desired number of repetitions.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-pullup-video-url';
+    const videoUrl = 'https://www.youtube.com/embed/gbPURTSxQLY?si=uSdcuuA1zBHCPC6b';
 
     return (
         <SpecificExercise

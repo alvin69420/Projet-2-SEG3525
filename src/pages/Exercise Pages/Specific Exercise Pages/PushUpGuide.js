@@ -11,7 +11,7 @@ const PushUpGuide = () => {
         'Ensure your body remains in a straight line throughout the movement, without sagging your hips or arching your back.',
         'Repeat for the desired number of repetitions.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-push-up-video-url';
+    const videoUrl = 'https://www.youtube.com/embed/JyCG_5l3XLk?si=T67ZXfo56fffl1tu';
 
     return (
         <SpecificExercise

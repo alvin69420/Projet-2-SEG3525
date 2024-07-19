@@ -14,7 +14,7 @@ const SpecificArticle = ({ title, content, imageUrl, author, date }) => {
                         </Col>
                     </Row>
                     <div className="mt-3">
-                        <img src={imageUrl} alt={title} className="img-fluid" />
+                        <img src={imageUrl} alt={title} className="img-fluid" style={{width: '100%'}}/>
                     </div>
                     <div className="mt-5">
                         <p id='exerciseOrArticleText'>{content}</p>

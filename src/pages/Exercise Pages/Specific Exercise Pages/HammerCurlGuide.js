@@ -11,7 +11,7 @@ const HammerCurlGuide = () => {
         'Ensure your upper arms remain stationary throughout the exercise.',
         'Repeat for the desired number of repetitions.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-hammer-curl-video-url';
+    const videoUrl = 'https://www.youtube.com/embed/CFBZ4jN1CMI?si=5lAuzVdBWdHWarib';
 
     return (
         <SpecificExercise

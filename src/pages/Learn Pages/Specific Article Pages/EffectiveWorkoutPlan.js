@@ -43,7 +43,7 @@ const EffectiveWorkoutPlan = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/WorkoutPlanImage.jpeg'),
         author: 'Michael Thompson',
         date: 'January 10, 2022'
     };

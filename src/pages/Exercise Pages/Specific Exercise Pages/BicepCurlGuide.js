@@ -11,7 +11,7 @@ const BicepCurlGuide = () => {
         'Ensure your upper arms remain stationary throughout the exercise.',
         'Repeat for the desired number of repetitions.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-bicep-curl-video-url';
+    const videoUrl = 'https://www.youtube.com/embed/ykJmrZ5v0Oo?si=CjI7nh97GzGYiryw';
 
     return (
         <SpecificExercise

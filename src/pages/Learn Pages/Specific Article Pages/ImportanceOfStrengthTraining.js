@@ -39,7 +39,7 @@ const ImportanceOfStrengthTraining = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/ImportanceOfStrengthTrainingImage.webp'),
         author: 'Emily Davis',
         date: 'December 1, 2021'
     };

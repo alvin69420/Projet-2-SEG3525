@@ -47,7 +47,7 @@ const MealPrepForSuccess = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/MealPrepImage.jpg'),
         author: 'Mark Taylor',
         date: 'July 1, 2022'
     };

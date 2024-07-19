@@ -11,7 +11,7 @@ const TricepExtensionGuide = () => {
         'Pause briefly at the bottom of the movement, then extend your arms to lift the dumbbell back to the starting position.',
         'Repeat for the desired number of repetitions.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-tricep-extension-video-url';
+    const videoUrl = 'https://www.youtube.com/embed/-Vyt2QdsR7E?si=q3AaDFmBjNx7NK3-';
 
     return (
         <SpecificExercise

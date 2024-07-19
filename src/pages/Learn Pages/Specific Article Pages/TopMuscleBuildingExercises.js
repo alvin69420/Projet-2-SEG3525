@@ -43,7 +43,7 @@ const TopMuscleBuildingExercises = () => {
                 </p>
             </>
         ),
-        imageUrl: require('../../../images/placeholder-image.png'),
+        imageUrl: require('../../../images/TopMuscleBuildingExercisesImage.webp'),
         author: 'Sarah Johnson',
         date: 'February 20, 2022'
     };

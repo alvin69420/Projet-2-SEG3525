@@ -11,7 +11,7 @@ const DeadliftGuide = () => {
         'Lower the barbell back to the ground by bending at your hips and knees, maintaining a straight back throughout the movement.',
         'Repeat for the desired number of repetitions.'
     ];
-    const videoUrl = 'https://www.youtube.com/embed/example-deadlift-video-url';
+    const videoUrl = 'https://www.youtube.com/embed/r4MzxtBKyNE?si=pzrB4cmMFXLoZOR2';
 
     return (
         <SpecificExercise
