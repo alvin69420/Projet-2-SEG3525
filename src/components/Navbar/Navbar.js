@@ -3,7 +3,6 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import SearchBar from '../Searchbar/Searchbar';
 import Button from 'react-bootstrap/Button';
 import { DropdownDivider } from 'react-bootstrap';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 
 const Navbar = ({ activePage, setActivePage }) => {
     
