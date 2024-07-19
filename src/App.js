@@ -27,36 +27,41 @@ import Training from './pages/Learn Pages/Article Type Pages/training';
 import MuscleBuilding from './pages/Learn Pages/Article Type Pages/musclebuilding';
 import PlanTraining from './pages/PlanTraining';
 import Blog from './pages/Forum';
+import FAQ from './pages/FAQ pages/FAQ';
 import './index.css';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('Home');
+  const [shopItemCount, setShopItemCount] = useState(0);
 
   const handleSetActivePage = (page) => {
     setCurrentPage(page);
   };
 
-  return (
+  const incrementItemCount = () => {
+    setShopItemCount(shopItemCount + 1);
+  };
 
+  return (
     <div className="App">
-      <Navbar activePage={currentPage} setActivePage={handleSetActivePage} />
+      <Navbar activePage={currentPage} setActivePage={handleSetActivePage} itemCount={shopItemCount} />
 
       <div className='content'>
         {currentPage === 'Home' && <Home />}
         {currentPage === 'Contact Us' && <ContactUs />}
-        {currentPage === 'Benches' && <Benches />}
-        {currentPage === 'Dumbbells' && <Dumbbells />}
-        {currentPage === 'Kettlebells' && <Kettlebells />}
-        {currentPage === 'Barbells' && <Barbells />}
-        {currentPage === 'Plates' && <Plates />}
-        {currentPage === 'Cable Machines' && <CableMachines />}
-        {currentPage === 'Smith Machines' && <SmithMachines />}
-        {currentPage === 'Leg Machines' && <LegMachines />}
-        {currentPage === 'Treadmills' && <Treadmills />}
-        {currentPage === 'Ellipticals' && <Ellipticals />}
-        {currentPage === 'Bikes' && <Bikes />}
-        {currentPage === 'Climbers' && <Climbers />}
-        {currentPage === 'Rowers' && <Rowers />}
+        {currentPage === 'Benches' && <Benches incrementItemCount={incrementItemCount} />}
+        {currentPage === 'Dumbbells' && <Dumbbells incrementItemCount={incrementItemCount} />}
+        {currentPage === 'Kettlebells' && <Kettlebells incrementItemCount={incrementItemCount} />}
+        {currentPage === 'Barbells' && <Barbells incrementItemCount={incrementItemCount} />}
+        {currentPage === 'Plates' && <Plates incrementItemCount={incrementItemCount} />}
+        {currentPage === 'Cable Machines' && <CableMachines incrementItemCount={incrementItemCount} />}
+        {currentPage === 'Smith Machines' && <SmithMachines incrementItemCount={incrementItemCount} />}
+        {currentPage === 'Leg Machines' && <LegMachines incrementItemCount={incrementItemCount} />}
+        {currentPage === 'Treadmills' && <Treadmills incrementItemCount={incrementItemCount} />}
+        {currentPage === 'Ellipticals' && <Ellipticals incrementItemCount={incrementItemCount} />}
+        {currentPage === 'Bikes' && <Bikes incrementItemCount={incrementItemCount} />}
+        {currentPage === 'Climbers' && <Climbers incrementItemCount={incrementItemCount} />}
+        {currentPage === 'Rowers' && <Rowers incrementItemCount={incrementItemCount} />}
         {currentPage === 'Shoulder Exercises' && <Shoulder />}
         {currentPage === 'Leg Exercises' && <Leg />}
         {currentPage === 'Chest Exercises' && <Chest />}
@@ -69,9 +74,11 @@ function App() {
         {currentPage === 'Muscle Building' && <MuscleBuilding />}
         {currentPage === 'Plan Your Training' && <PlanTraining />}
         {currentPage === 'Forum' && <Blog />}
+        {currentPage === 'FAQ' && <FAQ />}
       </div>
     </div>
   );
 }
 
 export default App;
+

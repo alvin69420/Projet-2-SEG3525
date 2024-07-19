@@ -1,6 +1,6 @@
 import Shop from '../../components/Shop Menus/Shop';
 
-const SmithMachines = () => {
+const SmithMachines = ({incrementItemCount}) => {
     const allProducts = {
         
 'Cable Machines': [
@@ -24,7 +24,7 @@ const SmithMachines = () => {
     const categories = ['Cable Machines', 'Smith Machines', 'Leg Machines'];
 
     return (
-        <Shop defaultActiveItem="Smith Machines" allProducts={allProducts} categories={categories} />
+        <Shop defaultActiveItem="Smith Machines" allProducts={allProducts} categories={categories} incrementItemCount={incrementItemCount}/>
     );
 }
 

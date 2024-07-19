@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 
-const Shop = ({ defaultActiveItem, allProducts, categories }) => {
+const Shop = ({ defaultActiveItem, allProducts, categories, incrementItemCount }) => {
     const [activeItem, setActiveItem] = useState(defaultActiveItem);
     const [products, setProducts] = useState(allProducts[defaultActiveItem] || []);
 
@@ -49,7 +49,7 @@ const Shop = ({ defaultActiveItem, allProducts, categories }) => {
                             <Card.Text>
                                 Price: {product.price} $
                             </Card.Text>
-                            <Button variant="danger"><b>Add to cart</b></Button>
+                            <Button variant="danger" onClick={incrementItemCount}><b>Add to cart</b></Button>
                         </Card.Body>
                     </Card>
                   </Col>

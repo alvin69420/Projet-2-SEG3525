@@ -1,6 +1,6 @@
 import Shop from '../../components/Shop Menus/Shop';
 
-const Plates = () => {
+const Plates = ({incrementItemCount}) => {
     const allProducts = {
         'Benches': [
             { name: 'Flat Bench', price: 200, image: require("../../images/Flat-Bench.webp") },
@@ -32,7 +32,7 @@ const Plates = () => {
     const categories = ['Benches', 'Dumbbells', 'Kettlebells', 'Barbells', 'Plates'];
 
     return (
-        <Shop defaultActiveItem="Plates" allProducts={allProducts} categories={categories} />
+        <Shop defaultActiveItem="Plates" allProducts={allProducts} categories={categories} incrementItemCount={incrementItemCount}/>
     );
 }
 

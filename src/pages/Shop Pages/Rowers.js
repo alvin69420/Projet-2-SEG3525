@@ -1,6 +1,6 @@
 import Shop from '../../components/Shop Menus/Shop';
 
-const Rowers = () => {
+const Rowers = ({incrementItemCount}) => {
     const allProducts = {
         'Treadmills': [
             { name: 'Basic Treadmill', price: 800, image: require("../../images/Basic-Treadmill.jpg") },
@@ -32,7 +32,7 @@ const Rowers = () => {
     const categories = ['Treadmills', 'Ellipticals', 'Bikes', 'Rowers', 'Climbers'];
 
     return (
-        <Shop defaultActiveItem="Rowers" allProducts={allProducts} categories={categories} />
+        <Shop defaultActiveItem="Rowers" allProducts={allProducts} categories={categories} incrementItemCount={incrementItemCount}/>
     );
 }
 

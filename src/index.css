@@ -27,7 +27,7 @@ html, body {
 .navbar h1 {
     margin-left: 10px;
     color: #E63946;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .navbar .links {
@@ -38,7 +38,7 @@ html, body {
     margin-left: 20px;
     text-decoration: none;
     padding: 10px;
-    font-size: 24px;
+    font-size: 22px;
     color: #333;
 }
 
@@ -161,5 +161,9 @@ html, body {
 }
 
 .trainingProgramText {
+    font-size: 18px;
+}
+
+.AnswerText {
     font-size: 18px;
 }

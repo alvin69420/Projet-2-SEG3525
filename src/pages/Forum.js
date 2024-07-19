@@ -50,7 +50,7 @@ const ForumPage = () => {
 
     return (
         <Container>
-            <h1 className="display-4 text-center mt-5"><b>Forum</b></h1>
+            <h1 className="display-2 text-center mt-5"><b>Forum</b></h1>
             <p className="text-center display-6">Share your fitness journey, progress, and tips with the community!</p>
             <div className="mt-5">
                 {posts.map((post, index) => (

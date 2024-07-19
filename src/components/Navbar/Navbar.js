@@ -4,7 +4,7 @@ import SearchBar from '../Searchbar/Searchbar';
 import Button from 'react-bootstrap/Button';
 import { DropdownDivider } from 'react-bootstrap';
 
-const Navbar = ({ activePage, setActivePage }) => {
+const Navbar = ({ activePage, setActivePage, itemCount }) => {
     
     const [activeDropdown, setActiveDropdown] = useState('');
 
@@ -49,6 +49,7 @@ const Navbar = ({ activePage, setActivePage }) => {
     const handleActiveMenu = (menu) => {
         return activeDropdown === menu ? 'active' : '';
     };
+    
 
     return (
         <nav className="navbar">
@@ -60,7 +61,7 @@ const Navbar = ({ activePage, setActivePage }) => {
                         <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
                     </svg>
                     &nbsp;Home
-                    </Button>
+                </Button>
                 <Dropdown>
                     <Dropdown.Toggle as="button" className={`nav-link ${handleActiveMenu('Shop')}`} id="nav-dropdown">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
@@ -89,40 +90,6 @@ const Navbar = ({ activePage, setActivePage }) => {
                         <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Climbers', e)}>Climbers</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-
-                {/* <Dropdown>
-                    <Dropdown.Toggle as="button" className={`nav-link ${handleActiveMenu('Shop')}`} id="nav-dropdown">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                        </svg>
-                        &nbsp;Shop
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu className="dropdown-menu">
-                        
-                        <DropdownButton drop='end' title={<b>Weight Training/Strength</b>}>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Benches', e)}>Benches</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Dumbbells', e)}>Dumbbells</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Kettlebells', e)}>Kettlebells</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Barbells', e)}>Barbells</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Plates', e)}>Plates</Dropdown.Item>
-                        </DropdownButton>
-
-                        <DropdownButton drop='end' title={<b>Machines</b>}>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Cable Machines', e)}>Cable Machines</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Smith Machines', e)}>Smith Machines</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Leg Machines', e)}>Leg Machines</Dropdown.Item>
-                        </DropdownButton>
-
-                        <DropdownButton drop='end' title={<b>Cardio</b>}>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Treadmills', e)}>Treadmills</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Ellipticals', e)}>Ellipticals</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Bikes', e)}>Bikes</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Rowers', e)}>Rowers</Dropdown.Item>
-                        <Dropdown.Item className="dropdown-item" href="/" onClick={(e) => handleLinkClick('Climbers', e)}>Climbers</Dropdown.Item>
-                        </DropdownButton>
-                    </Dropdown.Menu>
-                </Dropdown> */}
-
                 <Dropdown>
                     <Dropdown.Toggle as="button" className={`nav-link ${handleActiveMenu('Exercises')}`} id="nav-dropdown">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-arms-up" viewBox="0 0 16 16">
@@ -175,6 +142,12 @@ const Navbar = ({ activePage, setActivePage }) => {
                     </svg>
                     &nbsp;Contact Us
                 </Button>
+                <Button href="#" className={`nav-link ${activePage === 'FAQ' ? 'active' : ''}`} onClick={(e) => handleLinkClick('FAQ', e)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+                    </svg>
+                    &nbsp;FAQ
+                </Button>
             </div>
             <div className="search-bar-container">
                 <SearchBar handleSearchClick={handleLinkClick} />
@@ -182,9 +155,8 @@ const Navbar = ({ activePage, setActivePage }) => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg>
-                    &nbsp;Cart
+                    &nbsp;{`Cart ${itemCount > 0 ? ': ' + itemCount + ' ' + (itemCount === 1 ? 'item' : 'items') : ''}`} 
                 </div>
-
             </div>
         </nav>
     );
