@@ -132,7 +132,7 @@ const Navbar = ({ activePage, setActivePage, itemCount, language, setLanguage })
     return (
         <nav className="navbar">
             <div className="logo">
-                <img style={{maxWidth: '125px', height: 'auto'}} src={require("../../images/Logo.png")} alt="Logo" />
+                <img className='mx-2' style={{maxWidth: '125px', height: 'auto'}} src={require("../../images/Logo.png")} alt="Logo" />
             </div>
             <div className="links">
                 <Button href="#" className={`nav-link ${activePage === 'Home' ? 'active' : ''}`} onClick={(e) => handleLinkClick('Home', e)}>
