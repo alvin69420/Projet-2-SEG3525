@@ -24,12 +24,6 @@ html, body {
     background-color: #F4A261;
 }
 
-.navbar h1 {
-    margin-left: 10px;
-    color: #E63946;
-    font-size: 20px;
-}
-
 .navbar .links {
     display: flex;
 }

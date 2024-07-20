@@ -131,7 +131,9 @@ const Navbar = ({ activePage, setActivePage, itemCount, language, setLanguage })
 
     return (
         <nav className="navbar">
-            <h1>Fitness Fusion</h1>
+            <div className="logo">
+                <img style={{maxWidth: '125px', height: 'auto'}} src={require("../../images/Logo.png")} alt="Logo" />
+            </div>
             <div className="links">
                 <Button href="#" className={`nav-link ${activePage === 'Home' ? 'active' : ''}`} onClick={(e) => handleLinkClick('Home', e)}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
