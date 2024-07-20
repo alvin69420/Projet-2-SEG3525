@@ -27,7 +27,7 @@ html, body {
 .navbar h1 {
     margin-left: 10px;
     color: #E63946;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .navbar .links {
@@ -35,10 +35,10 @@ html, body {
 }
 
 .navbar a, a:visited, #nav-dropdown {
-    margin-left: 20px;
+    margin-left: 10px;
     text-decoration: none;
     padding: 10px;
-    font-size: 22px;
+    font-size: 20px;
     color: #333;
 }
 
@@ -56,7 +56,7 @@ html, body {
 
 .home {
     height: 100vh; 
-    background-image: url('./images/home-background.jpg'); 
+    background-image: url('./images/home-background.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;

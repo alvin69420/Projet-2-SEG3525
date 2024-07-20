@@ -5,9 +5,9 @@ const MuscleBuilding = () => {
     <ExercisesAndArticles 
       PageTitle="Muscle Building Articles"
       arr={[
-        {Name: "Effective Strategies for Building Muscle Mass", Description: "Learn the most effective strategies for building muscle mass, including tips on workout routines, nutrition, and recovery.", Img: require("../../../images/MuscleBuildingStrategiesImage.jpg")},
-        {Name: "Top Muscle-Building Exercises You Should Be Doing", Description: "Discover the top exercises that are proven to help you build muscle efficiently and safely.", Img: require("../../../images/TopMuscleBuildingExercisesImage.webp")},
-        {Name: "Common Mistakes to Avoid When Trying to Build Muscle", Description: "Understand the common mistakes people make when trying to build muscle and how to avoid them to maximize your gains.", Img: require("../../../images/MistakesMuscleBuildingImage.webp")}
+        {Name: "Effective Strategies for Building Muscle Mass", Description: "Learn the most effective strategies for building muscle mass, including tips on workout routines, nutrition, and recovery.", Img: require("../../../images/MuscleBuildingStrategiesImage.jpg"), alt: "Effective Strategies for Building Muscle Mass"},
+        {Name: "Top Muscle-Building Exercises You Should Be Doing", Description: "Discover the top exercises that are proven to help you build muscle efficiently and safely.", Img: require("../../../images/TopMuscleBuildingExercisesImage.webp"), alt: "Top Muscle-Building Exercises You Should Be Doing"},
+        {Name: "Common Mistakes to Avoid When Trying to Build Muscle", Description: "Understand the common mistakes people make when trying to build muscle and how to avoid them to maximize your gains.", Img: require("../../../images/MistakesMuscleBuildingImage.webp"), alt: "Common Mistakes to Avoid When Trying to Build Muscle"}
       ]}
       ExerciseOrArticle="Article"
     />

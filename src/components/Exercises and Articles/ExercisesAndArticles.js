@@ -90,7 +90,7 @@ const ExercisesAndArticles = ({ PageTitle, arr, ExerciseOrArticle }) => {
                     {arr.map((item, index) => (
                         <Col key={index}>
                             <Card className='mt-3' style={{ width: 'auto', height:'550px'}}>
-                                <Card.Img style={{ maxWidth: '100%', height:'250px' }} variant="top" src={item.Img} alt='Image of exercise or article' />
+                                <Card.Img style={{ maxWidth: '100%', height:'250px' }} variant="top" src={item.Img} alt={item.alt} />
                                 <Card.Body>
                                     <Card.Title className='text-center mt-3'><h3>{item.Name}</h3></Card.Title>
                                     <Card.Text className='mt-3'>

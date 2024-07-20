@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 
-const Shop = ({ defaultActiveItem, allProducts, categories, incrementItemCount }) => {
+const Shop = ({ defaultActiveItem, allProducts, categories, incrementItemCount}) => {
     const [activeItem, setActiveItem] = useState(defaultActiveItem);
     const [products, setProducts] = useState(allProducts[defaultActiveItem] || []);
 
@@ -43,7 +43,7 @@ const Shop = ({ defaultActiveItem, allProducts, categories, incrementItemCount }
               {products.map((product, index) => (
                   <Col key={index}>
                     <Card style={{ width: 'auto' }}>
-                        <Card.Img style={{maxWidth:'100%', height: '250px'}} className='mt-3' variant="top" src={product.image} alt='Product Image'/>
+                        <Card.Img style={{maxWidth:'100%', height: '250px'}} className='mt-3' variant="top" src={product.image} alt={product.alt}/>
                         <Card.Body>
                             <Card.Title>{product.name}</Card.Title>
                             <Card.Text>

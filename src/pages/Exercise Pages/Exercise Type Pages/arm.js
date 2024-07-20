@@ -5,10 +5,10 @@ const Arm = () => {
     <ExercisesAndArticles 
       PageTitle="Arm Exercises"
       arr={[
-        {Name: "Bicep Curl", Description: "An exercise involving lifting a dumbbell by curling the arm towards the shoulder, targeting the bicep muscles", Img: require("../../../images/Bicep-Curls.jpg")},
-        {Name: "Tricep Extension", Description: "An exercise involving extending the arm behind the head with a dumbbell, targeting the tricep muscles", Img: require("../../../images/Tricep-Extension.jpg")},
-        {Name: "Hammer Curl", Description: "An exercise similar to the bicep curl but with a neutral grip, targeting the brachialis muscle", Img: require("../../../images/Hammer-Curl.webp")}
-      ]}
+        {Name: "Bicep Curl", Description: "An exercise involving lifting a dumbbell by curling the arm towards the shoulder, targeting the bicep muscles", Img: require("../../../images/Bicep-Curls.jpg"), alt: "Bicep Curl Exercise"},
+        {Name: "Tricep Extension", Description: "An exercise involving extending the arm behind the head with a dumbbell, targeting the tricep muscles", Img: require("../../../images/Tricep-Extension.jpg"), alt: "Tricep Extension Exercise"},
+        {Name: "Hammer Curl", Description: "An exercise similar to the bicep curl but with a neutral grip, targeting the brachialis muscle", Img: require("../../../images/Hammer-Curl.webp"), alt: "Hammer Curl Exercise"}
+      ].map(item => ({...item, alt: item.alt.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}))}
       ExerciseOrArticle="Exercise"
     />
   );
