@@ -89,7 +89,10 @@ const Navbar = ({ activePage, setActivePage, itemCount, language, setLanguage })
             planYourTraining: 'Plan Your Training',
             forum: 'Forum',
             contactUs: 'Contact Us',
-            faq: 'FAQ'
+            faq: 'FAQ',
+            cart: 'Cart',
+            item: 'item',
+            items: 'items',
         },
         es: {
             home: 'Inicio',
@@ -125,7 +128,10 @@ const Navbar = ({ activePage, setActivePage, itemCount, language, setLanguage })
             planYourTraining: 'Planifica tu Entrenamiento',
             forum: 'Foro',
             contactUs: 'Contáctanos',
-            faq: 'Preguntas Frecuentes'
+            faq: 'Preguntas Frecuentes',
+            cart: 'Carrito',
+            item: 'artículo',
+            items: 'artículos',
         }
     };
 
@@ -235,7 +241,7 @@ const Navbar = ({ activePage, setActivePage, itemCount, language, setLanguage })
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg>
-                    &nbsp;{`Cart ${itemCount > 0 ? ': ' + itemCount + ' ' + (itemCount === 1 ? 'item' : 'items') : ''}`} 
+                    &nbsp;{translatedText[language].cart}{`${itemCount > 0 ? ': ' + itemCount + ' ' + (itemCount === 1 ? translatedText[language].item : translatedText[language].items) : ''}`} 
                 </div>
                 <p 
                 className='mt-3 mx-3' 
